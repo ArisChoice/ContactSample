@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:foo="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar_layout" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/_20ssp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/str_contacts_name" />
+
+            <EditText
+                android:id="@+id/edtxt_contact_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:hint="@string/str_contacts_name"
+                android:padding="@dimen/_5ssp"
+                android:textSize="@dimen/_15ssp" />
+        </LinearLayout>
+        <!---->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10ssp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/str_contacts_number" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <com.hbb20.CountryCodePicker
+                    android:id="@+id/ccp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    foo:ccp_contentColor="@color/color_white"
+                    foo:ccp_defaultPhoneCode="1" />
+
+                <EditText
+                    android:id="@+id/edtxt_Number_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:hint="@string/str_contacts_number"
+                    android:inputType="phone"
+                    android:padding="@dimen/_5ssp"
+                    android:textSize="@dimen/_15ssp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/btn_save_contact"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/_30ssp"
+            android:layout_marginRight="@dimen/_30ssp"
+            android:layout_marginTop="@dimen/_80ssp"
+            android:background="@drawable/drawable_rounder_background"
+            android:gravity="center"
+            android:padding="@dimen/_8ssp"
+            android:text="@string/str_save"
+            android:textAllCaps="true"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/_15ssp" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">ContactsChallenge</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_contacts">Contacts</string>
+    <string name="title_history">History</string>
+    <string name="str_contacts_application">Contacts Application</string>
+    <string name="str_session_expired">Session Expired</string>
+    <string name="error_toast_invalid_email">Invalid Email</string>
+    <string name="str_title">Title</string>
+    <string name="str_contacts_name">Contact name</string>
+    <string name="str_contacts_number">Phone number</string>
+    <string name="str_save">Save</string>
+    <string name="str_empty_space">No contact found</string>
+    <string name="str_contact_saved">Contact saved</string>
+    <string name="error_name">Enter contact name</string>
+    <string name="error_number">Enter contact number</string>
+</resources>

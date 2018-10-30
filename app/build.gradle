@@ -1,0 +1,57 @@
+apply plugin: 'com.android.application'
+android {
+    compileSdkVersion 26
+    defaultConfig {
+        applicationId "app.contactschallenge.test"
+        minSdkVersion 15
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        vectorDrawables.useSupportLibrary = true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation "com.android.support:appcompat-v7:$rootProject.supportLibraryVersion"
+    implementation "com.android.support:design:$rootProject.supportLibraryVersion"
+    implementation "com.android.support:cardview-v7:$rootProject.supportLibraryVersion"
+
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+    implementation "com.android.support:support-vector-drawable:$rootProject.supportLibraryVersion"
+//    testImplementation 'junit:junit:4.12'
+//    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+//    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    implementation "com.google.dagger:dagger:$rootProject.dagger2Version"
+    annotationProcessor "com.google.dagger:dagger-compiler:$rootProject.dagger2Version"
+    implementation "com.google.code.gson:gson:$rootProject.gsonVersion"
+    implementation "com.squareup.retrofit2:retrofit:$rootProject.retroVersin"
+    implementation "com.squareup.retrofit2:converter-gson:$rootProject.retroVersin"
+    implementation "com.squareup.okhttp3:logging-interceptor:$rootProject.retroLoginterceptor"
+    implementation "com.jakewharton:butterknife:$rootProject.butterKnife"
+    annotationProcessor "com.jakewharton:butterknife-compiler:$rootProject.butterKnife"
+
+    implementation "com.google.firebase:firebase-crash:$rootProject.googleService"
+    implementation "com.google.firebase:firebase-core:$rootProject.googleService"
+    implementation "com.google.android.gms:play-services-gcm:$rootProject.googleService"
+    implementation "com.google.android.gms:play-services-auth:$rootProject.googleService"
+    implementation "com.google.android.gms:play-services-places:$rootProject.googleService"
+    implementation "com.google.firebase:firebase-messaging:$rootProject.googleService"
+    implementation 'de.hdodenhof:circleimageview:1.3.0'
+    implementation 'io.realm:realm-android:0.81.1'
+
+    implementation "com.jakewharton:butterknife:$rootProject.butterKnife"
+    annotationProcessor "com.jakewharton:butterknife-compiler:$rootProject.butterKnife"
+
+    implementation 'com.hbb20:ccp:2.0.0'
+    implementation "com.intuit.ssp:ssp-android:1.0.4"
+}

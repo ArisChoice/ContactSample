@@ -1,0 +1,33 @@
+{
+  "contacts": [
+    {
+      "id": "c200",
+      "name": "Arsh Gill",
+      "email": "ravi@gmail.com",
+      "address": "xx-xx-xxxx,x - street, x - country",
+      "gender": "male",
+      "phone": {
+        "mobile": "+91 0000000000"
+      }
+    },
+    {
+      "id": "c201",
+      "name": "Johnny Depp",
+      "email": "johnny_depp@gmail.com",
+      "address": "xx-xx-xxxx,x - street, x - country",
+      "gender": "male",
+      "phone": {
+        "mobile": "+91 0000000000"
+      }
+    },{
+      "id": "c202",
+      "name": "Johnny De",
+      "email": "johnny_depp@gmail.com",
+      "address": "xx-xx-xxxx,x - street, x - country",
+      "gender": "male",
+      "phone": {
+        "mobile": "+91 0000000000"
+      }
+    }
+  ]
+}
